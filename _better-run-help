@@ -1,0 +1,3 @@
+#compdef better-run-help
+
+_man "$@"
