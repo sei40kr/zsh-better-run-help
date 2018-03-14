@@ -30,7 +30,7 @@ better-run-help() {
   fi
 
   if [[ "${+commands[$command]}" == 1 ]]; then
-    LBUFFER="${command} ${subcommand} --help | \$PAGER"
+    LBUFFER="${command}${subcommand:+ ${subcommand}} --help | \$PAGER"
   fi
 }
 
